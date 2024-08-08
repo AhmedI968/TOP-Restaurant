@@ -41,6 +41,7 @@ const menuItems = [
 
 const Menu = () => {
     const content = document.createElement('div');
+    content.classList.add('menuContent');
 
     const header = document.createElement('h2');
     header.textContent = 'Menu';
@@ -48,6 +49,7 @@ const Menu = () => {
     content.appendChild(header);
 
     const menuList = document.createElement('div');
+    menuList.classList.add('menuList');
 
     menuItems.forEach(item => {
         const menuItem = document.createElement('div');

@@ -61,3 +61,57 @@ body {
     max-width: 500px;
     border-radius: 10px;
 }
+
+.menuContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.menuList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.menuContent h2 {
+    font-size: 4rem;
+    color: #00274d;
+}
+
+.menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.menuItem img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.menuItem h4 {
+    font-size: 2rem;
+    color: #4d0000;
+}
+
+.itemDescription {
+    font-size: 1.2rem;
+    color: #00274d;
+}
+
+.itemPrice {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00274d;
+}
