@@ -1,4 +1,5 @@
 import './style.css';
+import burgerImg from './images/burger.jpeg';
 
 const Home = () => {
     const content = document.createElement('div');
@@ -14,7 +15,7 @@ const Home = () => {
     content.appendChild(headline);
 
     const image = document.createElement('img');
-    image.src = 'images/burger.jpeg';
+    image.src = burgerImg;
     image.alt = 'burger';
     image.classList.add('burgerImg');
     content.appendChild(image);

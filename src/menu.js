@@ -1,33 +1,41 @@
+import './style.css';
+
+import cheeseBurgerImg from './images/classic-cheeseburger.jpeg';
+import baconBBQBurgerImg from './images/bacon-bbq-burger.jpeg';
+import mushroomSwissBurgerImg from './images/mushroom-swiss-burger.jpeg';
+import spicyJalapenoBurgerImg from './images/jalapeno-burger.jpeg';
+import veggieBurgerImg from './images/veggie-burger.jpeg';
+
 const menuItems = [
     {
         name: "Classic Cheeseburger",
         description: "A juicy beef patty topped with cheddar cheese, lettuce, tomato, and our special sauce.",
         price: "$9.99",
-        image: "images/classic-cheeseburger.jpeg"
+        image: cheeseBurgerImg
     },
     {
         name: "Bacon BBQ Burger",
         description: "Tender beef patty with crispy bacon, tangy BBQ sauce, onions, and cheddar cheese.",
         price: "$11.49",
-        image: "images/bacon-bbq-burger.jpeg"
+        image: baconBBQBurgerImg
     },
     {
         name: "Mushroom Swiss Burger",
         description: "Grilled mushrooms, Swiss cheese, and a savory sauce on top of a seasoned beef patty.",
         price: "$10.99",
-        image: "images/mushroom-swiss-burger.jpeg"
+        image: mushroomSwissBurgerImg
     },
     {
         name: "Spicy Jalapeño Burger",
         description: "A spicy kick with jalapeños, pepper jack cheese, and a spicy mayo on a juicy beef patty.",
         price: "$11.99",
-        image: "images/spicy-jalapeno-burger.jpeg"
+        image: spicyJalapenoBurgerImg
     },
     {
         name: "Veggie Burger",
         description: "A delicious plant-based patty with lettuce, tomato, and avocado on a fresh bun.",
         price: "$10.49",
-        image: "images/veggie-burger.jpeg"
+        image: veggieBurgerImg
     }
 ];
 
@@ -49,6 +57,7 @@ const Menu = () => {
         image.src = item.image;
         image.alt = item.name;
         image.classList.add('itemImage');
+        menuItem.appendChild(image);
 
         const name = document.createElement('h4');
         name.textContent = item.name;
