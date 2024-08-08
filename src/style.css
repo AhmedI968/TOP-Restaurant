@@ -62,7 +62,7 @@ body {
     border-radius: 10px;
 }
 
-.menuContent {
+.menuContent, .contactContent {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,12 +76,12 @@ body {
     padding: 20px;
 }
 
-.menuContent h2 {
+.menuContent, .contactContent h2 {
     font-size: 4rem;
     color: #00274d;
 }
 
-.menuItem {
+.menuItem, .contactInfo {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,4 +114,12 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     color: #00274d;
+}
+
+.contactInfo {
+    background: linear-gradient(to right, #00274d, #4d0000);
+    color: white;
+    font-size: 1.4rem;
+    height: 30vh;
+    justify-content: space-around;
 }

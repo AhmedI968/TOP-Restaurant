@@ -2,6 +2,7 @@ import './style.css'
 
 const Contact = () => {
     const content = document.createElement('div');
+    content.classList.add('contactContent');
 
     const header = document.createElement('h2');
     header.textContent = 'Contact Us';
