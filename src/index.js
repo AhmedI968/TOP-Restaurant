@@ -12,13 +12,13 @@ let currentPage = Home();
 content.appendChild(currentPage);
 
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        content.removeChild(currentPage);
-        if (button === homeBtn) {
+    button.addEventListener('click', (event) => {
+        content.innerHTML = '';
+        if (event.target.id === 'homeBtn') {
             currentPage = Home();
-        } else if (button === menuBtn) {
+        } else if (event.target.id === 'menuBtn') {
             currentPage = Menu();
-        } else if (button === contactBtn) {
+        } else if (event.target.id === 'contactBtn') {
             currentPage = Contact();
         }
         content.appendChild(currentPage);
