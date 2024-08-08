@@ -3,6 +3,7 @@ import burgerImg from './images/burger.jpeg';
 
 const Home = () => {
     const content = document.createElement('div');
+    content.classList.add('homeContent');
 
     const header = document.createElement('h1');
     header.innerHTML = '<h1>The Burger Joint</h1>';
